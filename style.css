@@ -752,3 +752,31 @@ footer .navigation-footer .contact-footer {
         padding: 0 .8rem 0;
     }
 }
+
+/* marquee */
+header .market {
+    display: flex;
+    align-items: center;
+    padding: .3rem 0;
+}
+header .market .mark-item {
+    display: inline-block;
+    margin: 0 .3rem;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+    padding: .2rem .5rem;
+    font-size: .8rem;
+}
+header .market .mark-item.mark-up span,
+header .market .mark-item.mark-up .mark-status {
+    color: green;
+}
+header .market .mark-item.mark-down span,
+header .market .mark-item.mark-down .mark-status {
+    color: red;
+}
+header .market .mark-item .mark-status {
+    width: 15px;
+    height: 15px;
+}
