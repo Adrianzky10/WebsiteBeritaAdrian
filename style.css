@@ -61,6 +61,60 @@ header {
     z-index: 9999;
     background-color: #fff;
 }
+header .tag-list {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+header .tag-list .inner {
+    display: flex;
+    width: fit-content;
+    gap: 1rem;
+    margin: .5rem 0;
+    animation: loop 50s linear infinite;
+    -webkit-animation: loop 50s linear infinite;
+}
+header .tag-list .inner .tag {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    box-shadow:         0 0.1rem 0.2rem #00000033,        0 0.1rem 0.5rem #0000004d,        0 0.2rem 1.5rem #00000066;
+    padding: .5rem 1.5rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+header .tag-list .inner .tag span {
+    font-size: 1.2rem;
+}
+header .tag-list .fade {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(90deg, #fff, transparent 5%, transparent 95%, #fff);
+}
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+}
 header nav {
     display: flex;
     justify-content: space-between;
